@@ -1,9 +1,11 @@
 # create new function to calculate pay
 def computepay(hours, rate):
     if hours > 40:
-        print((40 * rate) + ((hours - 40) * (1.5 * rate)))
+        pay = (40 * rate) + ((hours - 40) * (1.5 * rate))
+        print(pay)
     else:
-        print(hours * rate)
+        pay = hours * rate
+        print(pay)
 
 
 # check to assure user enters valid input
@@ -16,3 +18,8 @@ while True:
         print('Please enter numbers only.')
 
 computepay(x, y)
+
+
+# future ideas
+# 1. take in a list of hours and rates and print out pays for each one
+# 2. print out monthly and salaried pay based on the input
